@@ -1,0 +1,48 @@
+.xs{
+    background-image: url('/../assets/images/merceds.jpg');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.forme{
+    border-radius: 20px;
+    background-color: #ffffff1f;
+    margin-top: 8%;
+    padding: 10px;
+  }
+.form-control{
+    border-radius: 8px;
+    background-color: black;
+    opacity: 0.40;
+}
+label{
+    color: white;
+}
+.right{
+    background-color: black;
+    border-radius: 20px;
+}
+.right {
+    background-image: url('/../assets/images/log.png');
+    background-size: cover; 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    border-radius: 8px;
+  }
+.trait{
+    background-color: #0C4EB1;
+    height: 3px;
+    width: 30%;
+}
+button
+{
+  background: #FF6600;
+  border-radius: 8px;
+  border: none;
+  padding: 10px;
+  color: white;
+  font-size: 20px;
+//   width: 150px;
+}

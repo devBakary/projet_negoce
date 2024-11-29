@@ -1,0 +1,100 @@
+.navbar {
+    height: 60px;
+    
+  }
+  
+  // nav head
+  .navi{
+    background-color: #0C4EB1;
+    text-align: center;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .navbar-nav .nav-link, .navbar-brand {
+    line-height: 60px;
+  }
+  .navbar-nav .nav-item {
+    margin-right: 20px;
+  }
+  .navbar-nav .nav-item a{
+    color: white;
+  }
+  // proposition
+  .proposition{
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    padding-top: 40px;
+    margin-left: 40px;
+  }
+  .proposition span{
+    font-size: 20px;
+    text-transform: uppercase;
+  }
+  .proposition span{
+    font-size: 16px;
+    text-align: left;
+  }
+  // stock
+  .stock-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 35px;
+    
+  }
+  // pour le radio button
+  .radio{
+    font-size: 14px;
+    color: #D9D9D9;
+  }
+  .form-check-input:checked {
+    background-color: #FF6600; /* Couleur du bouton radio sélectionné */
+    border: 2px solid #FF6600;
+  }
+  // reste des item de navi
+  .items{
+    padding-top: 10px;
+  }
+  // les compte et panier
+  .account-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+    
+  }
+  .account-item i {
+    font-size: 18px;
+    line-height: 1!important;
+  }
+  .account-item p {
+    margin: 0;
+    font-size: 16px;
+    color: white;
+  }
+  .footer{
+    width: 100%;
+    background-color: #0C4EB1;
+    padding: 20px;
+    color: white;
+    
+  
+  }
+  .foote{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  .footer-text{
+    margin-left: 20px;
+  }
+  .devider{
+    border: 1px solid white;
+    height: 14px;
+    position: relative;
+    top: 5px;
+    left: 10px;
+  }

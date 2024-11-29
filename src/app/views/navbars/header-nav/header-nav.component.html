@@ -1,1 +1,69 @@
-<p>header-nav works!</p>
+<div class="container-fluidn" >
+
+    <!-- mon menu de navigation -->
+    <nav class="navbar navbar-expand-lg">
+     <div class="container-fluid navi">
+       <a class="navbar-brand" href="#">imager part</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+
+       <div class="collapse navbar-collapse ml-5" id="navbarSupportedContent">
+         <div class="navbar-nav me-auto mb-2 mb-lg-0">
+           <li class="nav-item proposition">
+             <span style="color: white;">Proposition</span>
+               <p>Actif</p>
+           </li>
+         </div>
+         <div class="d-flex py-2" >
+           <ul class="navbar-nav mx-4 ">
+             <li class="nav-item stock-item">
+               <span style="color: white;"> STOCK</span>
+               <div class="radio">
+                 <div class="form-check form-check-inline">
+                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                   <label class="form-check-label" for="inlineRadio1">ALLUME</label>
+                 </div>
+                 <div class="form-check form-check-inline">
+                   <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                   <label class="form-check-label" for="inlineRadio2">ETEINT</label>
+                 </div>
+               </div>
+             </li>
+             <li class="nav-item items">
+               <a class="nav-link" href="#">BON DE MATERIEL</a>
+             </li>
+             <li class="nav-item items">
+               <a class="nav-link" href="#">BON DE MATERIEL COLLECTIF</a>
+             </li>
+             <li class="nav-item account-item">
+               <i class="bi bi-cart" style="color: #FF6600;"></i>
+               <p>Mon panier</p>
+           </li>
+             <li class="nav-item account-item">
+               <i class="bi bi-person-circle" style="color: white;"></i>
+               <p>Mon compte</p>
+           </li>
+           </ul>
+         </div>
+       </div>
+     </div>
+   </nav>
+  
+     <router-outlet></router-outlet>
+
+<div class="col text-center d-flex footer">
+ <div class="foote d-flex">
+  <div class="footer-text">Declaration de confidentialite</div>
+   <!-- devider -->
+   <div class="devider"></div>
+   <!--  -->
+  <div class="footer-text">Mention legale</div>
+   <!-- devider -->
+   <div class="devider"></div>
+   <!--  -->
+  <div class="footer-text">Licence</div>
+ </div>
+</div>
+  
+</div>
