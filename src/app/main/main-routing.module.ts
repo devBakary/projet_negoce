@@ -11,13 +11,14 @@ import { ListClientComponent } from "../views/list-client/list-client.component"
 import { ListPieceComponent } from "../views/list-piece/list-piece.component";
 import { ListVehiculeComponent } from "../views/list-vehicule/list-vehicule.component";
 import { LoginPageComponent } from "../views/login-page/login-page.component";
-
+import { MarqueDeVehiculeComponent } from "../views/marque-de-vehicule/marque-de-vehicule.component";
+import { SearchPageComponent } from "../views/search-page/search-page.component";
 
 
 
 
 const routes: Routes = [
-  { path: "", component: AuthentificationProComponent },
+  { path: "", component: SearchPageComponent },
   { path: "aboutus", component: ControleTechniqueComponent },
   { path: "contactus", component: BoardPageComponent },
   { path: "aboutus", component: CommandePieceComponent },
