@@ -49,40 +49,40 @@ export const routes: Routes = [
                 path: "list-piece",
                 component: ListPieceComponent
               },
+              {
+                path: "sub-nav",
+                component: SubHeaderNavComponent,
+                children: [
+                    {
+                        path: "list-client",
+                        component: ListClientComponent
+                    },
+                    {
+                        path: "entretien",
+                        component: EntretienComponent
+                    },
+                    {
+                        path: "prendre-rdv",
+                        component: PrendreRdvComponent
+                    },
+                    {
+                        path: "commande-piece",
+                        component: CommandePieceComponent
+                    },
+                    {
+                        path: "piece-defectueuse",
+                        component: PieceDefectueuseComponent
+                    },
+                    {
+                        path: "info-vehicule",
+                        component: InfoVehiculeComponent
+                    },
+                    {
+                        path: "controle-technique",
+                        component: ControleTechniqueComponent
+                    }
+                ]
+            }
             ],
     },
-    {
-        path: "sub-nav",
-        component: SubHeaderNavComponent,
-        children: [
-            {
-                path: "list-client",
-                component: ListClientComponent
-            },
-            {
-                path: "entretien",
-                component: EntretienComponent
-            },
-            {
-                path: "prendre-rdv",
-                component: PrendreRdvComponent
-            },
-            {
-                path: "commande-piece",
-                component: CommandePieceComponent
-            },
-            {
-                path: "piece-defectueuse",
-                component: PieceDefectueuseComponent
-            },
-            {
-                path: "info-vehicule",
-                component: InfoVehiculeComponent
-            },
-            {
-                path: "controle-technique",
-                component: ControleTechniqueComponent
-            }
-        ]
-    }
 ];
