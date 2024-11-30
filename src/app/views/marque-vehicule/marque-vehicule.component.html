@@ -1,16 +1,25 @@
 <div class="container-fuild mt-5">
-    <div class="col bg-success">
-        Vehicule>Recherche assistée
+    <div class="row info-bar">
+        <div class="col-md-3 fw-bold">
+            Vehicule>Recherche assistée
+        </div>
+        <div class="col-md-3 d-flex">
+            1
+        </div>
+        <div class="col-md-3">
+            2
+        </div>
+
     </div>
     <div class="row" style="width: 100%!important;">
-        <div class="col-md-2 ">
+        <div class="col-md-3 " style="margin-bottom: 10px; margin-top: 5px;">
             <div class="searchbar-card mx-1 mt-3">
                 <div class="texte">
                     Recherche rapide
                 </div>
                 <div class="mt-3 searchbar">
                     Immatriculation
-                    <div class="input-group">
+                    <div class="input-group search">
                         <input
                           type="text"
                           id="searchInput"
@@ -24,13 +33,13 @@
                       </div>
                 </div>
                 <div class="mt-3 mb-3 searchbar">
-                    Type Mines, CNIT, VIN 
-                    <div class="input-group">
+                    Type Mines, CNIT, VIN
+                    <div class="input-group search">
                         <input
                           type="text"
                           id="searchInput"
                           class="form-control"
-                          placeholder="Rechercher..."
+                          placeholder="Rechercher"
                           aria-label="Rechercher"
                         />
                         <button class="btn btn-primary" type="button">
@@ -39,9 +48,226 @@
                       </div>
                 </div>
             </div>
+            <!-- sec -->
+            <div class="searchbar-card mx-1 mt-3">
+                <div class="texte">
+                    Recherche par critere
+                </div>
+                <div class="mt-3 row searchbar-2">
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        Marque
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        Modele
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        Date MEC
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        Carburant
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        Cylindrée
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        Type moteur
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        BV
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        NB rapports
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        Carosserie
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex ">
+                     <div class="col-md-4 mt-1">
+                        nb. portes
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                   <div class="d-flex">
+                     <div class="col-md-4 mt-1">
+                        puiss. fiscale
+                    </div>
+                    <div class="col-md-8" (click)="toggleSearchBar()" style="cursor: pointer;">
+                        <div *ngIf="showSearchBar" class="input-group input">
+                            <input
+                              type="text"
+                              id="searchInput"
+                              class="form-control"
+                              placeholder="Rechercher..."
+                              aria-label="Rechercher"
+                            />
+                            <button class="btn btn-primary" type="button">
+                              <i class="fas fa-search mb-2"></i>
+                            </button>
+                          </div>
+                    </div>
+                   </div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-md-9 bg-danger">
+        <div class="col-md-9 body-card">
             <div class="col d-flex">
                 <nav class="navbar navbar-expand-md navbar-dark mt-3">
                     <div class="collapse navbar-collapse" id="myNavbar">
@@ -56,8 +282,8 @@
                     </div>
                 </nav>
             </div>
-            <div class="d-flex py-4">
-                <div class="col">
+            <div class="row py-4">
+                <div class="col-md-2">
                     <div class="card" style="width: 10rem;">
                         <img class="card-img-top" src="../../../assets/images/voiture.png" alt="Card image cap">
                         <div class="sub">
@@ -65,7 +291,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2">
                     <div class="card" style="width: 10rem;">
                         <img class="card-img-top" src="../../../assets/images/voiture.png" alt="Card image cap">
                         <div class="sub">
@@ -73,7 +299,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2">
                     <div class="card" style="width: 10rem;">
                         <img class="card-img-top" src="../../../assets/images/piece.png" alt="Card image cap">
                         <div class="sub">
@@ -81,7 +307,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2">
                     <div class="card" style="width: 10rem;">
                         <img class="card-img-top" src="../../../assets/images/piece.png" alt="Card image cap">
                         <div class="sub">
@@ -89,7 +315,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2">
                     <div class="card" style="width: 10rem;">
                         <img class="card-img-top" src="../../../assets/images/piece.png" alt="Card image cap">
                         <div class="sub">
@@ -97,7 +323,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2">
                     <div class="card" style="width: 6rem;">
                         <img class="card-img-top" src="../../../assets/images/piece.png" alt="Card image cap">
                         <div class="sub">
@@ -105,7 +331,7 @@
                         </div>
                       </div>
                 </div>
-                <div class="col">
+                <div class="col-md-2">
                     <div class="card" style="width: 10rem;">
                         <img class="card-img-top" src="../../../assets/images/piece.png" alt="Card image cap">
                         <div class="sub">
