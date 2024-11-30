@@ -1,0 +1,16 @@
+nav{
+    background-color: #0C4EB1;
+    color: white;
+    width: 100%;
+}
+.navbar-nav .nav-item a{
+    color: white;
+    margin-right: 10px;
+    text-align: center;
+  }
+  .nav-link.active{
+    background-color: #FF6600!important;
+    color: white!important;
+    width: 100%!important;
+    font-weight: bold;
+  }
