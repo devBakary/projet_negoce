@@ -1,5 +1,19 @@
+.arrow, .reload{
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    margin-left: 20px;
+    padding-top: 5px;
+}
+.arrow{
+    background-color: #545454;
+}
+.reload{
+    background-color: white;
+}
+
 .info-bar{
-    padding: 10px;
+    padding: 5px;
     margin-top: -15px!important;
     background-color: #E8F6FF;
 }
