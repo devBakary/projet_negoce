@@ -1,1 +1,62 @@
-<p>list-client works!</p>
+<div class="container-fluid py-3">
+    <div class="d-flex justify-content-between align-items-center">
+      <!-- Boutons de création et d'import -->
+      <div>
+        <button class="btn btn-warning me-2" >Créer un client</button>
+        <button class="btn btn-dark" >Importer</button>
+      </div>
+  
+      <!-- Barre de recherche -->
+      <div class="search-container">
+        <input
+          type="text"
+          class="form-control search-input"
+          placeholder="Rechercher un client"
+          
+        />
+        <button class="btn btn-primary search-btn" >🔍</button>
+      </div>
+    </div>
+  
+    <!-- Table des données -->
+    <table class="table mx-auto text-center mt-4" >
+      <thead >
+        <tr class="tables">
+          <th scope="col" style="border-radius: 10px 0 0 0;">Position</th>
+          <th scope="col">Reference piece</th>
+          <th scope="col">Designation</th>
+          <th scope="col">Remarque</th>
+          <th scope="col">Quantite </th>
+          <th scope="col" style="border-radius: 0 10px 0 0;">Info modele </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td scope="row">1</td>
+          <td scope="row">1H9 609 738 A</td>
+          <td scope="row">clip</td>
+          <td scope="row"></td>
+          <td scope="row">x</td>
+          <td scope="row">1</td>
+        </tr>
+      </tbody>
+    </table>
+  
+    <!-- Pagination -->
+    <div class="pagination-container d-flex justify-content-between align-items-center">
+      <button
+        class="btn btn-outline-primary"
+        
+      >
+        Précédent
+      </button>
+      <span>Page </span>
+      <button
+        class="btn btn-outline-primary"
+        
+      >
+        Suivant
+      </button>
+    </div>
+  </div>
+  

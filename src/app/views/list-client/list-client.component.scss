@@ -1,0 +1,46 @@
+  .container-fluid {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .btn {
+    border-radius: 5px;
+    padding: 8px 15px;
+  }
+  
+  .search-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-input {
+    width: 300px;
+    border-radius: 5px 0 0 5px;
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .search-btn {
+    border-radius: 0 5px 5px 0;
+    margin-left: -1px;
+  }
+  
+  .table-orange {
+    background-color:#FF6600;
+    color: white;
+  }
+  
+  .client-table th,
+  .client-table td {
+    text-align: left;
+    padding: 10px;
+  }
+  
+  .pagination-container {
+    margin-top: 20px;
+  }
+  .tables{
+    background-color: #FF6600;
+    color: white;
+  }
+  

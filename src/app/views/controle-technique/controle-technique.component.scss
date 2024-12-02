@@ -1,0 +1,50 @@
+.sidebar-configuration {
+    height: 100%;
+    border-right: 1px solid #ccc;
+  }
+  
+  .car-card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .car-image {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .car-details {
+    text-align: center;
+  }
+  
+  .car-number {
+    font-size: 1.5rem;
+    padding: 5px 10px;
+    color: white;
+  }
+  
+  .car-plate {
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: block;
+    margin: 10px 0;
+  }
+  
+  .car-km,
+  .car-mileage {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #555;
+  }
+  
+  .model-details {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
