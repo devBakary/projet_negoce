@@ -1,0 +1,104 @@
+.col{
+    background-color: #E8F6FF;
+    color: #FF6600;
+    padding: 10px;
+    width: 100%;
+}
+.forme{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.40);
+    padding: 10px;
+    // margin: 10px;
+}
+.img{
+    border: 0.1px solid black;
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.40);
+    height: 160px;
+    width: 220px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.img  img{
+    height: 140px;
+    width: 100%;
+}
+.number{
+    height: 40px;
+    background-color: #0C4EB1;
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    border-radius: 4px;
+    width: 40px;
+    
+}
+.matricule{
+    width: 210px;
+    height: 45px;
+    background-image: url('/../assets/images/plaque.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    padding-top: 2px;
+    font-size: 28px;
+    font-weight: bold;
+}
+input{
+    border: 1px solid #0078AA;
+}
+
+.categorie{
+    box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.40);
+    padding-top: 4px;
+    width: 16rem!important;
+    border-radius: 8px;
+    margin-left: 10px;
+}
+.categorie .img{
+    border: none;
+    border-radius: 8px 8px 0px 0px;
+    box-shadow: none;
+}
+.cat-img{
+    height: 50px;
+    width: 80px;
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+}
+.cat-img  img{
+    height: 40px;
+    width: 100%;
+}
+.sub{
+    background-color: #E8F6FF;
+    width: 100%;
+    padding: 2px;
+    margin: 0; 
+    padding: 0;
+}
+.tables{
+    background-color: #EBEBEB;
+}
+tr{
+    border: 1px solid white
+}
+td img{
+    width: 70px;
+    height: 50px;
+}
+.form-check-input{
+    background-color: red;
+    border-color: red;
+    height: 20px;
+    width: 50px;
+    margin-left: 8%;
+}
+.form-switch .form-check-input:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
