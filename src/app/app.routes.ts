@@ -14,6 +14,7 @@ import { CommandePieceComponent } from './views/commande-piece/commande-piece.co
 import { PieceDefectueuseComponent } from './views/piece-defectueuse/piece-defectueuse.component';
 import { InfoVehiculeComponent } from './views/info-vehicule/info-vehicule.component';
 import { ControleTechniqueComponent } from './views/controle-technique/controle-technique.component';
+import { RdvInfoGarageComponent } from './views/rdv-info-garage/rdv-info-garage.component';
 
 export const routes: Routes = [
     {
@@ -64,6 +65,10 @@ export const routes: Routes = [
                     {
                         path: "prendre-rdv",
                         component: PrendreRdvComponent
+                    },
+                    {
+                        path: "prendre-rdv-garage",
+                        component: RdvInfoGarageComponent
                     },
                     {
                         path: "commande-piece",
