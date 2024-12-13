@@ -1,0 +1,43 @@
+.col{
+    background-color: #E8F6FF;
+    color: #FF6600;
+    padding: 10px;
+}
+.container{
+    padding: 20px;
+}
+.forme{
+    background-image: url('/../assets/images/back.png');
+    height: 70vh;
+    border-radius: 10px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 40px;
+}
+label{
+    color: white;
+}
+.form-control{
+    border: 1px solid #336DEC;
+    background-color: #D9D9D9;
+    opacity: 0.74;
+}
+.btn{
+    text-align: center;
+    color: white;
+    width: 50%;
+    height: 40px;
+}
+.save{
+    background-color: #FF6600;
+}
+.cancel{
+    background-color: #FE0606;
+}
+.carte{
+    background: #D9D9D9;
+    height: 70%;
+    width: 100%;
+    margin-top: 45%;
+}
