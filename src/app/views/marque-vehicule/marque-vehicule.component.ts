@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 
 @Component({
@@ -11,6 +11,11 @@ import { RouterModule } from '@angular/router';
 })
 export class MarqueVehiculeComponent {
   showSearchBar: boolean = false;
+  constructor( private router: Router) {}
+
+  navigate() {
+    this.router.navigate(['/navbar/dashboard']);
+  }
 
   toggleSearchBar(): void {
     this.showSearchBar = !this.showSearchBar;
