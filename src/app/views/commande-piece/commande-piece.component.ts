@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-commande-piece',
@@ -7,5 +8,11 @@ import { Component } from '@angular/core';
   styleUrl: './commande-piece.component.scss'
 })
 export class CommandePieceComponent {
+
+  constructor( private router: Router) {}
+
+  navigate() {
+    this.router.navigate(['/navbar/search']);
+  }
 
 }
