@@ -1,2 +1,144 @@
-<p>entretien works!</p>
-cvbnn wdmn dw n fnr dns w j hj
+<div class="container-fluid py-3">
+    <div class="row">
+      <!-- Barre de navigation latérale -->
+      <div class="col-md-2 bg-light sidebar">
+        <div class="py-3">
+          <h5 class="text-center">Configuration</h5>
+        </div>
+      </div>
+  
+      <!-- Contenu principal -->
+      <div class="col-md-10">
+        <h3 class="text-primary">Entretien</h3>
+  
+        <!-- Section véhicule -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5>VEHICULE</h5>
+            <div class="row">
+              <div class="col-md-4">
+                <label for="date-circulation">Première mise en circulation</label>
+                <input type="date" id="date-circulation" class="form-control">
+              </div>
+              <div class="col-md-4">
+                <label for="age">Âge</label>
+                <input type="number" id="age" class="form-control" placeholder="Âge">
+              </div>
+              <div class="col-md-4">
+                <label for="kilometrage">Kilométrage</label>
+                <input type="number" id="kilometrage" class="form-control" placeholder="Kilométrage">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Section sélection du plan d'entretien -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5>SELECTION DU PLAN D'ENTRETIEN</h5>
+            <div class="d-flex justify-content-between align-items-center">
+              <div>
+                <button class="btn btn-primary">1 an</button>
+                <button class="btn btn-primary">2 ans</button>
+                <button class="btn btn-primary">3 ans</button>
+                <button class="btn btn-primary">5 ans</button>
+              </div>
+              <div>
+                <input type="range" class="form-range" min="20000" max="100000" step="20000">
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Opérations selon le carnet d'entretien -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5>OPÉRATION SELON LE CARNET D'ENTRETIEN DU 01/03/2004</h5>
+            <table class="table table-bordered text-center">
+              <thead>
+                <tr>
+                  <th>Remplacement</th>
+                  <th>Périodicité</th>
+                  <th>Temps</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Temps de base</td>
+                  <td>20 000 km</td>
+                  <td>1:00h</td>
+                </tr>
+                <tr>
+                  <td>Huile moteur</td>
+                  <td>20 000 km</td>
+                  <td>1:00h</td>
+                </tr>
+                <!-- Ajoute d'autres lignes si nécessaire -->
+              </tbody>
+            </table>
+          </div>
+        </div>
+  
+        <!-- Section informations -->
+        <div class="card mb-3">
+          <div class="card-body">
+            <h5>Informations</h5>
+            <textarea class="form-control" rows="3" placeholder="Informations supplémentaires"></textarea>
+            <div class="d-flex justify-content-end mt-3">
+              <button class="btn btn-warning me-2">Sauvegarder</button>
+              <button class="btn btn-danger">Annuler</button>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Liste des voitures -->
+        <div class="d-flex justify-content-center mb-3">
+          <div class="text-center me-3">
+            <img src="assets/images/Plaque.png" alt="Car" class="img-fluid small-photo" />
+            <div><strong>1</strong> DP131NH</div>
+          </div>
+          <div class="text-center">
+            <img src="assets/images/Plaque.png" alt="Car" class="img-fluid small-photo" />
+            <div><strong>2</strong> DP131NH</div>
+          </div>
+        </div>
+  
+        <!-- Table des contrôles -->
+        <table class="table table-bordered text-center">
+          <thead>
+            <tr>
+              <th>N°</th>
+              <th>Date contrôle</th>
+              <th>Kilométrage</th>
+              <th>Garage</th>
+              <th>Marque</th>
+              <th>Type de révision</th>
+              <th>Immatriculation</th>
+              <th>Prix</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>10/01/2021</td>
+              <td>150 000 KM</td>
+              <td>FABRE GILBERT</td>
+              <td>OPEL</td>
+              <td>1AN/150000KM</td>
+              <td>DP131NH</td>
+              <td>85.00€ TTC</td>
+            </tr>
+            <!-- Ajoute d'autres lignes si nécessaire -->
+          </tbody>
+        </table>
+  
+        <!-- Pagination -->
+        <div class="d-flex justify-content-between align-items-center">
+          <button class="btn btn-outline-primary">Précédent</button>
+          <span>Page 1 / 12</span>
+          <button class="btn btn-outline-primary">Suivant</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
