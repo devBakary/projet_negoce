@@ -91,6 +91,15 @@
         border-radius: 5px 5px 0px 0px;
         border-bottom: 2px solid #FF6600;
       }
+
+      .img-container {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Si nécessaire pour aligner l'image */
+        justify-content: center; /* Centrage horizontal */
+      }
       .tab-price{
         background-color: white;
         box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.20);
@@ -134,4 +143,36 @@
         width: 100%;
         background-color: white;
         padding: 10px;
+}
+
+.categorie{
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.40);
+  padding-top: 4px;
+  width: 16rem!important;
+  border-radius: 8px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+.categorie .img{
+  border: none;
+  border-radius: 8px 8px 0px 0px;
+  box-shadow: none;
+
+}
+.img img{
+  width: auto;
+  height: 160px;
+  justify-content: center;
+  overflow: hidden;
+}
+.cat-img{
+  height: 50px;
+  width: 80px;
+  background-color: white;
+  padding: 5px;
+  text-align: center;
+}
+.cat-img  img{
+  height: 40px;
+  width: 100%;
 }

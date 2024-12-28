@@ -344,7 +344,7 @@
     <!-- Corps de la page -->
      <div class="row mx-auto mb-4">
       <!-- for all part of the image and container -->
-      <div class="col-md-6 py-4 ">
+      <div class=" py-4 " [ngClass]="table ? 'col-md-6' : 'col-md-12'">
         <div class="d-flex mx-auto">
           <div class="boite1">
             <svg width="27" height="27" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -373,7 +373,7 @@
               <path d="M15.3125 3.75006L15.3125 20.625" stroke="black" stroke-width="2" stroke-linecap="round"/>
               </svg>
           </div>
-          <div class="boite1">
+          <div class="boite1" (click)="visible()">
             <svg class="mx-auto" width="26" height="27" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_305_308)">
               <path d="M30 15.2L22.8 8V13.3H0V17.1H22.8V22.4L30 15.2Z" fill="black"/>
@@ -422,13 +422,30 @@
             </svg>
         </div>
        </div>
-       <div class="img py-5" style="overflow: hidden;">
-        <img src="/../assets/images/piece.png" [style.transform]="zoomStyle" [style.transition]="zoomTransition" alt="" width="400px" height="240px" >
-       </div>
+       <div 
+       class="img py-5" 
+          style="overflow: hidden; position: relative;"
+          (click)="enableMove()"  
+          (mousedown)="onMouseDown($event)"
+          (mousemove)="onMouseMove($event)"
+          (mouseup)="onMouseUp()"
+          (mouseleave)="onMouseUp()"
+     >
+     <img 
+     src="/../assets/images/piece.png" 
+     [ngStyle]="{
+       width: table ? '400px' : '60vw', 
+       height: table ? '240px' : '80vh',
+       transform: 'translate(' + offsetX + 'px, ' + offsetY + 'px) ' + zoomStyle, 
+       transition: zoomTransition
+     }" 
+     alt="Image dynamique"
+   >
+     </div>
     </div>
       </div>
       <!-- part for the table and other -->
-      <div class="col-md-6 py-4" style="background-color: #EBEBEB; margin-top: 60px!important; width: 47%;">
+      <div *ngIf="table" class="col-md-6 py-4" style="background-color: #EBEBEB; margin-top: 60px!important; width: 47%;">
         <table class="table mx-auto text-center taableau" >
           <thead >
             <tr class="tables">
@@ -486,6 +503,85 @@
         </table>
       </div>
      </div>
+     <div class="row cat mx-auto mb-3">
+      <div class="col-md-3 categorie" >
+          <div class="img">
+              <img src="/../assets/images/mercedes.png" alt="image">
+          </div>
+          <div class=" sub d-flex">
+              <div class="label mx-4 mt-3 fw-bold">Piece moteur</div>
+              <div class="cat-img">
+                  <img src="/../assets/images/mercedes.png" alt="image">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 categorie" >
+          <div class="img">
+              <img src="/../assets/images/mercedes.png" alt="image">
+          </div>
+          <div class=" sub d-flex">
+              <div class="label mx-4 mt-3 fw-bold">Piece moteur</div>
+              <div class="cat-img">
+                  <img src="/../assets/images/mercedes.png" alt="image">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 categorie" >
+          <div class="img">
+              <img src="/../assets/images/mercedes.png" alt="image">
+          </div>
+          <div class=" sub d-flex">
+              <div class="label mx-4 mt-3 fw-bold">Piece moteur</div>
+              <div class="cat-img">
+                  <img src="/../assets/images/mercedes.png" alt="image">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 categorie" >
+          <div class="img">
+              <img src="/../assets/images/mercedes.png" alt="image">
+          </div>
+          <div class=" sub d-flex">
+              <div class="label mx-4 mt-3 fw-bold">Piece moteur</div>
+              <div class="cat-img">
+                  <img src="/../assets/images/mercedes.png" alt="image">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 categorie" >
+          <div class="img">
+              <img src="/../assets/images/mercedes.png" alt="image">
+          </div>
+          <div class=" sub d-flex">
+              <div class="label mx-4 mt-3 fw-bold">Piece moteur</div>
+              <div class="cat-img">
+                  <img src="/../assets/images/mercedes.png" alt="image">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 categorie" >
+          <div class="img">
+              <img src="/../assets/images/mercedes.png" alt="image">
+          </div>
+          <div class=" sub d-flex">
+              <div class="label mx-4 mt-3 fw-bold">Piece moteur</div>
+              <div class="cat-img">
+                  <img src="/../assets/images/mercedes.png" alt="image">
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3 categorie" >
+          <div class="img">
+              <img src="/../assets/images/mercedes.png" alt="image">
+          </div>
+          <div class=" sub d-flex">
+              <div class="label mx-4 mt-3 fw-bold">Piece moteur</div>
+              <div class="cat-img">
+                  <img src="/../assets/images/mercedes.png" alt="image">
+              </div>
+          </div>
+      </div>
+  </div>
     
      <!-- the sub table and shopa -->
      <div class="col text-center caract-icon py-2">

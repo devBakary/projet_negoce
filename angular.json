@@ -70,12 +70,15 @@
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
+          "options": {
+            "buildTarget": "projet_negoce:build"
+          },
           "configurations": {
             "production": {
-              "browserTarget": "projet_negoce:build:production"
+              "buildTarget": "projet_negoce:build:production"
             },
             "development": {
-              "browserTarget": "projet_negoce:build:development"
+              "buildTarget": "projet_negoce:build:development"
             }
           },
           "defaultConfiguration": "development"
