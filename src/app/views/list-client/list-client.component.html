@@ -3,8 +3,10 @@
       <!-- Boutons de création et d'import -->
       <div>
         <button class="btn btn-warning me-2" >Créer un client</button>
+        <button class="btn btn-warning me-2" data-bs-toggle="modal" data-bs-target="#myModal" >Créer un vehicule</button>
         <button class="btn btn-dark" >Importer</button>
       </div>
+      
   
       <!-- Barre de recherche -->
       <div class="search-container">
@@ -47,20 +49,37 @@
     </table>
   
     <!-- Pagination -->
-    <div class="pagination-container d-flex justify-content-between align-items-center">
-      <button
-        class="btn btn-outline-primary"
-        
-      >
-        Précédent
-      </button>
-      <span>Page </span>
-      <button
-        class="btn btn-outline-primary"
-        
-      >
-        Suivant
-      </button>
-    </div>
+   
   </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Creer Vehicule</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form 
+        >
+          <div class="modal-body mx-2">
+              <div class="col-md-10">
+                  <label>Immatriculation</label>
+                  <div class="col mx-auto mb-2 mt-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="username"
+                      />
+                    </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Ajouter</button>
+          </div>
+        </form>
+        </div>
+      </div>
+     
+      </div>
   

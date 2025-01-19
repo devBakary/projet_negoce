@@ -50,10 +50,8 @@
             <thead class="table-orange">
               <tr>
                 <th>Photo</th>
-                <th>Ref Interne</th>
                 <th>Nom de la pièce</th>
                 <th>Références</th>
-                <th>Prix</th>
                 <th>Date de livraison</th>
                 <th>Mettre dans le panier</th>
                 <th>Rechercher sur le site</th>
@@ -62,10 +60,8 @@
             <tbody>
               <tr>
                 <td><img src="assets/images/Disquefrein.png" alt="Pièce 1" class="img-fluid small-photo" /></td>
-                <td>PC001</td>
                 <td>Disques de frein AV</td>
                 <td>VAL101/231</td>
-                <td>78,50 €</td>
                 <td>25/12/2023</td>
                 <td scope="row">
                   <div class="form-check  form-switch">
@@ -111,3 +107,34 @@
     </div>
   </div>
   
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Creer Vehicule</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form 
+        >
+          <div class="modal-body mx-2">
+              <div class="col-md-10">
+                  <label>Immatriculation</label>
+                  <div class="col mx-auto mb-2 mt-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        name="username"
+                      />  
+                    </div>
+              </div>
+          </div>
+          <div class="modal-footer">
+            <button type="submit" class="btn btn-success">Appliquer</button>
+          </div>
+        </form>
+        </div>
+      </div>
+     
+      </div>
